@@ -1,0 +1,40 @@
+/* tablet view */
+@media screen and (max-width: 600px) {
+  .d-grid {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  header .row {
+    justify-content: center;
+    align-content: center;
+  }
+  header .col:first-child {
+    order: 2;
+    text-align: center;
+  }
+  header .col:last-child {
+    order: 1;
+    text-align: center;
+  }
+  .close {
+    padding: 0.5em;
+  }
+  .description .row {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+}
+
+/* smartphone view */
+
+@media screen and (max-width: 375px) {
+  header .col:first-child p {
+    font-size: 2vmax;
+  }
+  header .btn {
+    margin-top: 10em;
+  }
+  .description img {
+    right: 13%;
+  }
+}
